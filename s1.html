@@ -13,6 +13,10 @@
         text-align: center;
         position: relative;
         top: 40px;
+        animation-name: laptop;
+        animation-duration: 1500ms;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
     }
     #topnav {
         background-color: #333;
@@ -98,19 +102,63 @@
         height: auto;
         margin: auto;
         position: relative;
-        top: 30px;    
+        top: 30px;
+        animation-name: laptop;
+        animation-duration: 1500ms;
+        animation-fill-mode: forwards; 
+        animation-timing-function: ease-out;
+    }
+    @keyframes laptop {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    h2 {
+        animation-name: sliding-text;
+        animation-duration: 1000ms;
+        animation-fill-mode: forwards;
+        position: relative;
+        right: 300px;
     }
     .specyfikacja {
         line-height: 1.8;
+        animation-name: sliding-text;
+        animation-duration: 1000ms;
+        animation-fill-mode: forwards;
+        position: relative;
+        right: 300px;
 
     }
     .cena {
         font-size: larger;
         font-weight: bold;
+        animation-name: sliding-text;
+        animation-duration: 1000ms;
+        animation-fill-mode: forwards;
+        position: relative;
+        right: 300px;
+        animation-delay: 0ms;
     }
+    @keyframes sliding-text {
+        from {
+            position: relative;
+            right: 300px;
+        }
+        to {
+            position: relative;
+            right: 0px;
+        }
+    }
+    
     .ulepszenie {
         font-size: small;
         font-style: italic;
+        animation-name: sliding-text;
+        animation-duration: 1000ms;
+        animation-fill-mode: forwards;
     }
 
 </style>
